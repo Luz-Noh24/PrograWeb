@@ -1,0 +1,28 @@
+:root
+{
+    --Fondo:#f1f3f6;
+    --ColorF:#0c0d11;
+    --ColorBB:#1977f1;
+    --ColorBBF:#fafcff;
+    --ColorF2:#3c85dd;
+    --ColorB:#41b729;
+}
+html
+{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background: var(--Fondo);
+    scroll-snap-type: y mandatory;
+}
+body
+{
+    font-family: 'SFProDisplay-Regular', Helvetica, Arial, sans-serif;
+}
+.titulo
+{
+    color:var(--ColorF2)
+}
+h1
+{
+    font-size: 3.8rem;
+}

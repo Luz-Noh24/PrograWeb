@@ -1,0 +1,106 @@
+<!DOCTYPE html><!-- Aquí este declara la versión de html que usaremos-->
+<html lang="en"><!--Se declara el inicio del documento y se define el idioma general o principal del contenido-->
+<head><!--Sabemos que head es cabeza, pero en este caso aquí va la información que contiene los metas-->
+    <meta charset="UTF-8"><!-- Este se utiliza para especificar la condición que se utilizara en el documento en este caso, 
+    se admite una amplia variedad de caracteres-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Esto sirve mas que nada para la 
+        visualización de una pantalla.-->
+    <title>Document</title><!--Este es para el titulo que saldrá en la pestaña del navegador.-->
+    <link rel="stylesheet" href="CSS/main.css"> <!--Aquí se vincula el main de css-->
+</head><!--Aquí ya termina lo de meterle información al encabezado-->
+<body><!--Aquí es el cuerpo del contenido -->
+        <header><!--Aquí se define la parte superior de una pagina-->
+            <nav><!--Se utiliza para que almacenemos todas las etiquetas que tienen enlaces en la pagina-->
+                <ul class="nav-right-section"><!--Se utiliza para que una lista de elementos se encuentren a la derecha.-->
+                    <li> <!--Se utiliza para crear elementos de una lista no ordenada.-->
+                        <a href="https://mail.google.com/">Gmail</a> <!--Aquí esta diciendo que abra un enlace en la palabra
+                             que nos mandara a sitio o dirección de dicho enlace.-->
+                    </li><!--Aquí indica que se termina la lista.-->
+                    <li><!---->
+                        <a href="https://www.google.com/imghp?hl=es-419&authuser=0&ogbl">Imágenes </a><!---->
+                    </li><!--Es lo mismo que en el gmail-->
+                    <!--Se hace lo siguienete para darle la imagen del ícono-->
+                    <li class="menu-icon"> <!--Se crea esta clase para definirlo en css
+                    y darle la imagen del ícono-->
+                        <a href=""></a> 
+                    </li>
+                    <!--Aquí se uso inspeccionar para nuestra foto de perfil-->
+                    <li>
+                        <a href="">
+                            <img src="https://lh3.googleusercontent.com/a/ACg8ocILGb-HoJzVci3vdVru-V5u4tiotASH4sFsAUGaCapAOQ=s83-c-mo" alt="">
+                        </a>
+                    </li>
+                    <!--fin de foto de perfil-->
+                </ul><!--fin de la lista no ordenada-->
+            </nav><!--fin del alamcenamiento de las etiquetas-->
+        </header><!--Termina la sección de la derecha-->
+        <main><!--SECCIÓN PRINCIPAL-->
+            <section class="main-logo"><!--SECCIÓN DEL LOGO-->
+                <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png" alt="">
+            </section>
+            <section class="main-input"><!--BUSCADOR-->
+
+                <div class="main-input-container">
+                    <!--PARA EL ICONO DEL BUSCADOR-->
+                    <span class="search-icon">      
+                    </span>
+                    <input type="text"><!--ENTRADA DE TEXTO-->
+                    <!--IMAGEN DEL MICRO-->
+                    <img class="micro" src="https://www.pinclipart.com/picdir/big/32-322562_open-google-microphone-icon-clipart.png" alt="">
+                    <!--IMAGEN DEL CÁMARA-->
+                    <img class="cama" src="https://th.bing.com/th/id/OIP.tbGdK-Jrhdhc0Bkf9GBeHQAAAA?pid=ImgDet&rs=1" alt="">
+                </div><!--FIN DE LO QUE CONTIENE EL BUSCADOR-->
+            </section><!--FIN DE LA SECCIÓN DEL BUSCADOR-->
+            <!--PARTE DE LOS BOTONES DE ABAJO DE GOOGLE-->
+            <section class="main-buttons"><!--LLAMA A LOS BOTONES -->
+                <!--sOLO SALDRA EL NOMBRE Y SE PODRA PRESIONAR PERO NO IRA A NINGUN LADO-->
+                <div class=""><button>Buscar con Google</button></div>
+                <!--AQÍ YO QUISE EXPERIMENTAR SI LE PONIA UN ENLACE AL BOTON NOS MANDARIA A ESE ENLACE-->
+                <div>
+                    <a href="https://youtu.be/vWwuHdmkAbU?si=JHLz7IYSepU4ifD0"><button>Lo que puede pasar, va a pasar</a></button>
+                </div>
+            </section><!--TERMINA LA SECCIÓN DE LOS BOTONES-->
+        </main><!--TERMINA LA SECCIÓN PRINCIPAL-->  
+        <footer><!--PIE DE PÁGINA-->
+            <div class="footer-container"> <!--Contenedor del pie de 
+                página -->
+                <section>
+                <p>México</p> <!--Sección de arriba del pie de página-->
+                </section>
+            </div>  
+            <!--AQUÍ LA IDEA ES QUE TODA el contenido se agrupe y tenga un mismo formato-->
+            <div class="bottom">
+                <!--LISTA NO ORDENADA DE LA IZQUIERDA-->
+            <ul class="footer-left">
+                <!--ESTA PARTE ES PARECIDA A LA QUE HICIMOS EN HEADER-->
+                <li>
+                    <a href="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre Google</a>
+                </li>
+                <li>
+                    <a href="https://ads.google.com/intl/es_mx/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad</a>
+                </li>
+                <li>
+                    <a href="https://smallbusiness.withgoogle.com/intl/es-419_mx/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=MX#!/">Negocios</a>
+                </li>
+                <li>
+                    <a href="https://www.google.com/search/howsearchworks/?fg=1">Cómo funiona la Búsqueda</a>
+                </li>
+            </ul>
+            <!--LISTA NO ORDENADA DE LA DERECHA-->
+            <ul class="footer-right">
+                <!--ESTA PARTE ES PARECIDA A LA QUE HICIMOS EN HEADER-->
+                <li>
+                    <a href="https://policies.google.com/privacy?hl=es-MX&fg=1">Privacidad</a>
+                </li>
+                <li>
+                    <a href="https://policies.google.com/terms?hl=es-MX&fg=1">Condiciones</a>
+                </li>
+                <li>
+                    <a href="">Preferencias</a>
+                </li>
+            </ul>
+            </div>
+        </footer>
+    </header>
+</body>
+</html>

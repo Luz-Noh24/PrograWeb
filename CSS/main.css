@@ -1,0 +1,221 @@
+/*CSS ES MAS PARA DARLE UN ESTILO O FORMATO A TU DOCUMENTO*/
+/*COMENZAMOS CON DARLE EL FORMATO AL CUERPO*/
+body
+{
+    margin: 0;
+    padding: 0c;
+    font-size: 50 px;/*TAMAÑO DE LETRA*/
+    font-family: Arial, Helvetica, sans-serif;/*AQUI SE DECLARA*/
+}
+/*ENCABEZADO*/
+header
+{
+    width: 100%;/*ANCHO*/
+    height: 60px;/*ALTURA*/
+}
+/*AQUI LE DAREMOS FORMATO AL NAV QUE ESTA DENTRO DEL ENCABEZADO*/
+header nav
+{
+    display: flex;/*SIRVE PARA AJUSTAR EL CONTENIDO*/
+    justify-content:flex-end; /*SIRVE PARA JUSTIFICAR Y SE VAYA A LA DERECHA*/
+}
+/*AQUI LE DAREMOS FORMATO AL NAV QUE ESTA DENTRO DEL ENCABEZADO QUE TIENE UNA LISTA
+   QUE SE VA A LA DERECHA*/
+header nav .nav-right-section
+{
+    display: flex;
+    height: auto;/*AQUI ESTA DICIENDO QUE LA ALTURA SE AUTOMÁTICA*/
+    justify-content:flex-end;
+    list-style: none; /*para quitar los puntos de la lista */
+    justify-content: center;/*SIRVE PARA JUSTIFICAR Y SE VAYA AL CENTRO*/
+    align-items: center;/*SIRVE PARA QUE SE ALINIEN EN EL CENTRO*/
+}
+/*PARA PONER MARGENES EN LA BARRA DE NAVEGACIÓN*/
+nav .nav-right-section a
+{
+    margin-right: 5px; /*MARGEN EN LA DERECHA*/
+    color: #000000;
+}
+/*SE LE DARA FORMATO A LOS ENLACES*/
+a
+{
+    text-decoration: none;/*PARA QUITAR EL SUBRAYDO POR DEFECTO*/
+    cursor: pointer;/*PARA PONERLE UN ESTILO AL CURSOR CUANDO ESTE ENCIMA DE UN ELEMENTO DEL NAV*/
+}
+/*ESTO ES PARA COMO SE VERAEL ÍCONO EN LA BARRA DE NAVEGACIÓN */
+nav .nav-right-section .menu-icon
+{
+    /*ES EL LINK DE LA IMAGEN CON EL TAMAÑO DE LOS ICONOS*/
+    background-image: url("https://static.thenounproject.com/png/756729-200.png");
+    background-repeat: no-repeat;/*HACE QUE NO RESPETE EL TAMAÑO EXACTO QUE TENGA LA IMAGEN*/
+    background-position: center;/*QUE LA IMAGEN ESTE EN EL CENTRO*/
+    background-size: contain;/*AJUSTA EL TAMAÑO DE LA IMAGEN*/
+    width: 30px;
+    height: 30px;
+   
+}
+/*ESTO ES DE LA FOTO DE PERFIL*/
+nav .nav-right-section img
+{
+    border-radius: 50%; /*PARA QUE SEA REDONDO*/
+     margin-left: 10px;/*PARA QUE TENGA UN PEQUEÑO ESPACIO A LA IZQUIERDA*/
+}
+/*FORMATO DEL MAIN*/
+main
+{
+    margin-top: 150px;
+    text-align: center;
+}
+/*FORMATO PARA EL LOGO*/
+main .main-logo
+{
+   width: 530px;
+   margin: 0 auto;
+   margin-bottom: 35px;
+}
+/*FORMATO DE IMAGEN DEL LOGO*/
+main .main-logo img
+{
+    height: 92px;
+    width: 272px;
+}
+/*FORMATO PARA WL BUSCADOR*/
+main .main-input
+{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;   
+}
+/*FORMATO DEL CONTENEDOR*/
+main .main-input .main-input-container
+{
+    width: 525px;
+    border-radius: 100px;
+    border: solid 1px #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*FORMATO DE LA IMAGEN DE LA LUPA*/
+main .main-input-container .search-icon
+{
+    width: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: #dddbdb;
+    margin-top: 2px;
+    cursor: pointer;
+}
+/*FORMATO PARA EL TEXTO*/
+main .main-input .main-input-container input
+{
+    width: 480px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-style: 16px;
+
+}
+/*FORMATO PARA LA IMANGEN DEL MICRÓFONO*/
+main .main-input .main-input-container .micro
+{
+    justify-content:end;
+    width: 13px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 13px;
+}
+/*FORMATO PARA LA IMANGEN DEL MICRÓFONO*/
+main .main-input .main-input-container .cama
+{
+    justify-content:end;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+/*FORMATO PARA LOS BORONES*/
+
+main .main-buttons
+{
+    width: 560px;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+/*QUE CADA SEGMENTO ESTE ALINEDO*/
+main .main-buttons div 
+{
+    display: inline-block;
+    
+}
+/*FORMATO DEL BOTON QUE TIENE UN ENLACE*/
+main .main-buttons a
+{
+    text-decoration: none;/*PARA QUITAR LA RAYITA*/
+    cursor: pointer;
+
+}
+/*AQUÍ SE LES ESTA DANDO FORMATO A 3 CLASES*/
+main .main-buttons div button
+ {
+    margin-left: 10px;
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*FORMATO GENERAL DEL PIE DE PAGINA*/
+footer
+{
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    background-color: #c9c6c6;
+    border-top: 1px solid #d6d6d6;
+}
+/*FORMATO DE LOS BOTONES QUE HAY EN EL PIE DE PAGINA*/
+footer .bottom
+{
+    /*AQUÍ SE DECLARA UN CONTENEDOR GRID PARA DARLE CIERTO FORMATO*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+    border-top: 1px solid #858585;
+    
+}
+/*FORMATO PARA LAS LISTAS NO ORDENADAS DEL */
+footer ul
+{
+    display: flex;
+    list-style: none;
+    margin: 12px;
+    padding-left: 0;
+    
+}
+
+/*FORMATO DEL PIE DE PAGINA DE LA IZQUIERDA*/
+footer .footer-left
+{
+    margin-left: 20px;
+    justify-self: start;
+}
+
+/*FORMATO DEL PIE DE PAGINA DE LA DERECHA*/
+footer .footer-right
+{
+    justify-content: right;
+    margin-right: 30px;
+}
+
+/*SE LE DA FORMATO A TODA ETUQUETA QUE ESTE DENTRO DEL FOOTER*/
+footer div ul li a
+{
+    margin: 20px;
+    color: #221616;
+}
+
+
