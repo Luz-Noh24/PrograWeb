@@ -26,3 +26,50 @@ h1
 {
     font-size: 3.8rem;
 }
+.formulario
+{
+    
+
+    background-color: var(--gris);
+    width: min(60rem, 100%); /* Ahorra media querys. ¿Qué es más pequeño, 60rem o el
+    100% del tamaño de la pantalla? Ejemplo: Sí tengo un dispositivo móvil con 488px de
+    ancho, es más pequeño el 100%, por lo que tomará ese valor y no los 60 rem. Caso
+    contrario, tengo una tablet con 768px, ahí sí es menor 60 rem, por lo que se tomará ese
+    valor */
+    margin: 0 auto;
+    /* Usarlo si el padre no es un display flex (siendo así se usaría el justify-content,
+    el formulario tiene block por defaulf */
+    padding: 2rem;
+    border-radius: 1rem;
+    
+}
+.boton1
+{
+    background-color: var(--ColorBB);
+    text-decoration: none; /*Para quitar la barra de abajo de la letra*/
+    padding: 1rem 3rem;/*margenes internos*/
+    border-radius: 0.5rem;/*Esquinas redondeadas*/
+    color: var(--ColorBBF);/*el color de la letras*/
+    margin-top: 3rem;/*margen hacia arriba*/
+    font-weight: bold;/*los negritas*/
+    font-size: 2rem;
+    text-transform: uppercase;/*poner todo en mayusculas*/
+    text-align: center;/*Centrar el texto*/
+    width: 90%;/*ancho del boton que agarre un 90% si la pantalla es pequeña*/
+    border: none;
+}
+.boton2
+{
+    background-color: var(--ColorB);
+    text-decoration: none; /*Para quitar la barra de abajo de la letra*/
+    padding: 1rem 3rem;/*margenes internos*/
+    border-radius: 0.5rem;/*Esquinas redondeadas*/
+    color: var(--ColorBBF);/*el color de la letras*/
+    margin-top: 3rem;/*margen hacia arriba*/
+    font-weight: bold;/*los negritas*/
+    font-size: 2rem;
+    text-transform: uppercase;/*poner todo en mayusculas*/
+    text-align: center;/*Centrar el texto*/
+    width: 90%;/*ancho del boton que agarre un 90% si la pantalla es pequeña*/
+    border: none;
+}
