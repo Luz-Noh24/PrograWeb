@@ -1,0 +1,190 @@
+
+:root {
+    /* custom property */
+    --blanco: #fff;
+    /* Tono opaco  */
+    --oscuro: #212121;
+    /* Color primario en la paleta */
+    --primario: #ffc107;
+    /* Color secundario en la paleta */
+    --secundario: #0097a7;
+    --gris: #757575;
+    --gris_claro: #DFE9F3;
+    --medioazulmediogris: #94b8b8;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+/*Seccion de la imagen y coctactoss*/
+.page-header {
+    padding-top: 65px;
+}
+
+.background-image1 {
+    background-image: url(./mipapa.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+
+section {
+    height: 89vh;
+}
+
+.division {
+    display: flex;
+    height: 100%;
+
+}
+
+.division .contenedor3 {
+    display: block;
+    width: 50vw;
+    padding: 5rem;
+}
+
+.divisor3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.end {
+    height: 100px;
+    display: flex;
+    align-content: flex-end;
+}
+.colorrojo
+{
+}
+      
+
+
+.background-image1 .contenedor {
+    padding: 50px;
+    color: var(--blanco);
+    height: 100%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.contenedor5{
+    border: 10px solid #ff0000;
+}
+/*Seccion del formulario*/
+
+.formulario {
+    background-color: var(--secundario);/*Color de fondo*/
+    width: min(60rem, 100%);/*Esto nos sirve parq eu por ejemplo si tenemos un dispositivo movil con 488px por lo que es mas pequeño y por lo que tomara el 100% y no el de los 60rem y en cambio si tenemos una tablet de 768px ahi si es menor el 60rem por lo que tomara ese valor*/
+    margin: 0 auto;
+    /*Usarlo solo si elpadre no es un display y si es display pues se tendra que usar el justify-content, ya que el form tiene por defecto block*/
+    padding: 2rem;/*Espacio interior*/
+    border-radius: 1rem;/*El borde para que sea un poco redondeado*/
+  }
+  .formulario fieldset{
+    border: none;/*Quitarle el borde*/
+  }
+  .formulario legend{
+    text-align: center;/*Centrarlo*/
+    font-size: 1.8rem;/*Tamaño de la letra*/
+    font-weight: bold;/*Negritas*/
+    margin-bottom: 2rem;/*Margen inferior*/
+    text-transform: uppercase;/*Que la prmera letra sea mayuscula*/
+    color: var(--primario);/*Color*/
+  }
+  .campo{
+    margin-bottom: 1rem;/*Margen inferior*/
+  }
+
+
+.campo label{
+    color: var(--blanco);/*El color*/
+    font-weight: bold;/*Negritas*/
+    margin-bottom: .5rem;/*Margen inferior*/
+    display: block;/*Esto logra que el el label tome todo el espacio disponible y estar separado del input*/
+
+}
+.formulario .input-text,
+.formulario textarea{
+    width: 100%;
+    border: none;/*Quitar el borde*/
+    padding: 1.5rem;/*Espacio interior*/
+    border-radius: .5rem;/*El radio*/
+
+}
+.campo textarea {
+    height:20rem;/*Hacer mas alta la altura del textarea*/
+
+}
+.boton{
+    background-color: var(--gris);/*color de fondo*/
+    text-decoration: none;/*quitar el subrayado*/
+    padding: 1rem 3rem;/*espacio interior*/
+    border-radius: 0.5rem;/*esquinas redondeadas */
+    color: var(--blanco);/*Color del texto */ 
+    margin-top: 3rem;/*espacio exterior hacia arriba*/
+    font-weight: bold;/*negritas*/
+    font-size: 1rem;/*tamaño del texto*/
+    text-transform: uppercase;/*poner mayusculas*/
+    text-align: center;/*centrar texto*/
+    width: 90%;/*ancho dle boton, que abarque el 90% si la pantalla es pequeña */
+    border: none;/*Quitar el subrayado*/
+
+}
+
+.boton:hover{
+    cursor: pointer;/*Hover cambia a una mano cuando se pasa encima*/
+ }
+
+ @media (min-width: 768px) {/*Para que el boton se ajuste cuando este un poco menos al de una tablet agarre el tamaño auto*/
+    .boton{
+        width: auto;
+    }
+ }
+
+ @media (min-width: 768px) {
+    .contenedor-campos {
+        display: grid; /* Utiliza el modelo de diseño de cuadrícula */
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
+        column-gap: 1rem; /* Espacio entre columnas */
+        grid-template-rows: auto auto 20rem; /* Alturas específicas para cada fila */
+        /* También se podría crear la clase de ayuda campo-correo para llamar el selector,  pero se recomienda no crear nuevas clases si no es estrictamente necesario.nth-child significa el # del hijo. El orden sería: nombre, teléfono, correo, mensaje. Como requerimos modificar correo y mensaje, usaremos 3 y 4 en nth-child */
+        }
+        .campo:nth-child(3),
+        .campo:nth-child(4){
+        grid-column: 1/3; /* Para posicionar el elemento, "que vaya de la columna 1 a la
+        3*/
+        }
+        }
+
+.footer{
+    text-align: center;
+}
